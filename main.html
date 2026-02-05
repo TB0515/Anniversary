@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 For You</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="heart-bg" style="top: 10%; left: 15%;">💕</div>
+    <div class="heart-bg" style="top: 20%; right: 20%; animation-delay: 2s;">❤️</div>
+    <div class="heart-bg" style="bottom: 15%; left: 25%; animation-delay: 4s;">💖</div>
+    <div class="heart-bg" style="bottom: 25%; right: 15%; animation-delay: 1s;">💗</div>
+    <div class="heart-bg" style="top: 40%; left: 10%; animation-delay: 3s;">💝</div>
+    <div class="heart-bg" style="top: 60%; right: 10%; animation-delay: 5s;">💓</div>
+    
+    <div class="container">
+        <!-- Initial question -->
+        <div id="question">
+            <div class="emoji">💖</div>
+            <h1>Ready to take a trip down memory lane?</h1>
+            <p class="subtitle">I have special memories waiting for you...</p>
+    
+            <div class="buttons-container">
+                <button class="yes-btn" onclick="sayYes()">Yes! 💕</button>
+
+                <div class="no-wrapper">
+                    <button class="no-btn" id="noBtn" onmouseover="runAway()" onclick="runAway()">No</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Celebration message (hidden initially) -->
+        <div id="celebration" class="celebration">
+            <div class="emoji">🎉</div>
+            <h1>Yay! I knew you'd say yes!</h1>
+            <p class="message">4 years, 95 firsts, infinite love ❤️</p>
+            <button class="go-btn" onclick="goToMemories()">Let's Go! Don't forget to read the captions on each photo 🚀</button>
+            <p class="note">P.S. I coded this page just for you 😊</p>
+        </div>
+    </div>
+</body>
+</html>
